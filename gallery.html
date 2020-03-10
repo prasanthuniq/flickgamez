@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Dynamic-Content</title>
+	<script src="https://kit.fontawesome.com/3863690c98.js" crossorigin="anonymous"></script>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu"
+	rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript">
+
+	function dcontent(v)
+	{
+	if(v==1)
+	{
+	document.getElementById('c').style.display="none";
+	document.getElementById('c1').style.display="block";
+	document.getElementById('c2').style.display="none";
+	document.getElementById('c3').style.display="none";
+	document.getElementById('c4').style.display="none";document.getElementById('c5').style.display="none";
+	document.getElementById('mimg').src="images/three.jpg"
+	}
+	else if(v==2)
+	{
+	document.getElementById('c').style.display="none";
+	document.getElementById('c1').style.display="none";
+	document.getElementById('c2').style.display="block";
+	document.getElementById('c3').style.display="none";
+	document.getElementById('c4').style.display="none";document.getElementById('c5').style.display="none";
+	document.getElementById('mimg').src="images/four.jpg"
+	}
+	else if(v==3)
+	{
+	document.getElementById('c').style.display="none";
+	document.getElementById('c1').style.display="none";
+	document.getElementById('c2').style.display="none";
+	document.getElementById('c3').style.display="block";
+	document.getElementById('c4').style.display="none";document.getElementById('c5').style.display="none";
+	document.getElementById('mimg').src="images/five.jpg"
+	}
+	
+	else if(v==4)
+	{
+	document.getElementById('c').style.display="none";
+	document.getElementById('c1').style.display="none";
+	document.getElementById('c2').style.display="none";
+	document.getElementById('c3').style.display="none";
+	document.getElementById('c4').style.display="none";document.getElementById('c5').style.display="block";
+	document.getElementById('mimg').src="images/six.jpg"
+	}
+	else if(v==5)
+	{
+	document.getElementById('c').style.display="none";
+	document.getElementById('c1').style.display="none";
+	document.getElementById('c2').style.display="none";
+	document.getElementById('c3').style.display="none";
+	document.getElementById('c4').style.display="none";
+	document.getElementById('c5').style.display="block";
+	document.getElementById('mimg').src="images/seven.jpg"
+	}
+	else if(v==6)
+	{
+	document.getElementById('c').style.display="block";
+	document.getElementById('c1').style.display="none";
+	document.getElementById('c2').style.display="none";
+	document.getElementById('c3').style.display="none";
+	document.getElementById('c4').style.display="none";
+	document.getElementById('c5').style.display="none";
+	document.getElementById('mimg').src="images/two.jpg"
+	}
+	
+	}
+</script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <a class="navbar-brand" href="index.html">FlickGamez </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+    <div class="navbar-nav ">
+      <a class="nav-item nav-link active" href="index.html">HOME </a>
+      <a class="nav-item nav-link" href="#">SERVICES</a>
+      <a class="nav-item nav-link" href="#">GALLERY</a>
+	  <a class="nav-item nav-link" href="#">ABOUT US</a>
+	 	  <a class="nav-item nav-link" data-toggle="modal" data-target="#exampleModal" href="#">CONTACT US</a>
+      <a class="nav-item nav-link" href="#"><i class="bg-dark text-white p-2 rounded-circle far fa-user"></i></a>
+    </div>
+  </div>
+</nav>
+
+<!---------------modal box contact------------------>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="exampleModalLabel">Contact Here</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+		<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1"><i class="far fa-user"></i></span>
+  </div>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1"><i class="far fa-envelope"></i></span>
+  </div>
+  <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1"><i class="fas fa-unlock-alt"></i></span>
+  </div>
+  <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+		
+		<div class="mx-auto text-center">
+        
+        <button type="button" class="btn btn-primary">submit</button>
+      </div>
+		
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+	<div class="container mt-5">
+	<div class="row">
+	<div class="col-lg-8">
+	<div class="content" id="c">
+	<h2 class="text-secondary">Game name: Game-1</h2>
+	<h3 class="text-warning">Creator: kalyan</h5>
+	<h3 class="text-dark">About Game</h5>
+	<p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/><br/>
+<q><i class="font-weight-bold">“Keep it simple – always”</i></q>
+	</p>
+	</div>
+	
+	<div class="content1" id="c1">
+<h2 class="text-secondary">Game name: Game-2</h2>
+	<h3 class="text-warning">Creator: kartheek</h5>
+	<h3 class="text-dark">About Game</h5>
+	<p class="pt-3">
+Chip’s senior executive sales leadership has
+ contributed to the success of several software
+ companies. The culmination of his experience has
+ given Chip insight into understanding the 
+ limitations of prepackaged software solutions and the drive to extend beyond the limitations.
+At Tecra, this insight supports Chip in creating
+ a great experience for his customers, who have
+ a product vision but are unable to bring their
+ vision to realization on their own.<br/><br/><br/>
+<q><i class="font-weight-bold">“Creativity is the best way to experience living”</i></q>
+	</p>
+	</div>
+	
+	<div class="content2" id="c2">
+	<h2 class="text-secondary">Game name: Game-3</h2>
+	<h3 class="text-warning">Creator: Maneesh</h5>
+	<h3 class="text-dark">About Game</h5>
+	<p class="pt-3">
+Vijay steers the technology direction and implementation at Tecra. He is instrumental in developing Tecra’s highly reliable and adaptive software platforms.Vijay’s core strength lies in listening to customers and translating their needs into elegant software solutions based upon their unique requirements. He is happiest at a whiteboard collaborating with team members and clients on how to build and implement solutions that solve critical business problems.When Vijay isn’t architecting software, he is hiking, running or traveling. He’s been known to run more than a few miles for a good craft beer.<br/><br/><br/>
+<q><i class="font-weight-bold">“Work smart, play hard”</i></q>
+	</p>
+	</div>
+	
+	<div class="content3" id="c3">
+	<h2 class="text-secondary">Game name: Game-4</h2>
+	<h3 class="text-warning">Creator: Abhilash</h5>
+	<h3 class="text-dark">About Game</h5>
+	<p class="pt-3">
+Rod’s career has focused on incubating and growing high tech start-ups. This expertise allows him to focus on making Tecra offerings usable as well as helping customers recognize new business and revenue opportunities.
+Rod’s sales, technical support and business development background helps him evaluate customer requirements, recommend appropriate solutions and implement with confidence to achieve customer success and satisfaction.<br/><br/><br/>
+<q><i class="font-weight-bold">“I’m intrigued by the social impact of technology on humans”</i></q>
+	</p>
+	</div>
+	
+	<div class="content4" id="c4">
+	<h2 class="text-secondary">Game name: Game-5</h2>
+	<h3 class="text-warning">Creator: Sidharth</h5>
+	<h3 class="text-dark">About Game</h5>
+	<p class="pt-3">
+Bill’s sales, marketing and strategy expertise have contributed to his reputation for driving results. His accomplishments are achieved by working face-to-face with his customers to build key relationships. His design, implementation and negotiation skills helped him develop winning strategies for various Fortune 500 companies.Bill comes from a family of commercial printers in New York City, and he has a wealth of experience in printing and publishing. His specialties include web to print, working on the product marketing side for variable data publishing, cross media, data, and high-speed color products.<br/><br/><br/>
+<q><i class="font-weight-bold">“In the middle of difficulty lies opportunity”</i></q>
+	</p>
+	
+	</div>
+	<div class="content5" id="c5">
+	<h2 class="text-secondary">Game name: Game-6</h2>
+	<h3 class="text-warning">Creator: Tony</h5>
+	<h3 class="text-dark">About Game</h5>
+	<p class="pt-3">
+Bill’s sales, marketing and strategy expertise have contributed to his reputation for driving results. His accomplishments are achieved by working face-to-face with his customers to build key relationships. His design, implementation and negotiation skills helped him develop winning strategies for various Fortune 500 companies.Bill comes from a family of commercial printers in New York City, and he has a wealth of experience in printing and publishing. His specialties include web to print, working on the product marketing side for variable data publishing, cross media, data, and high-speed color products.<br/><br/><br/>
+<q><i class="font-weight-bold">“In the middle of difficulty lies opportunity”</i></q>
+	</p>
+	
+	</div>
+	
+	
+	</div>
+	
+	
+	<div class="col-lg-4 default-img">
+	<img src="images/two.jpg" id="mimg"  alt="" width="300px" height="400px" />
+	</div>
+	</div>
+	<div class="row mt-4">
+	<div class="col-lg-2">
+	<img src="images/two.jpg" onclick="dcontent(6)" />
+	<p class="text-center font-weight-bold">Game-1</p>
+	</div>
+	<div class="col-lg-2">
+	<img src="images/three.jpg" onclick="dcontent(1)" />
+	<p class="text-center font-weight-bold">Game-2</p>
+	</div>
+	<div class="col-lg-2">
+	<img src="images/four.jpg" onclick="dcontent(2)" />
+	<p class="text-center font-weight-bold">Game-3</p>
+	</div>
+	<div class="col-lg-2">
+	<img src="images/five.jpg" onclick="dcontent(3)" />
+	<p class="text-center font-weight-bold">Game-4</p>
+	</div>
+	<div class="col-lg-2">
+	<img src="images/six.jpg" onclick="dcontent(4)" />
+	<p class="text-center font-weight-bold">Game-5</p>
+	</div>
+	<div class="col-lg-2">
+	<img src="images/seven.jpg" onclick="dcontent(5)" />
+	<p class="text-center font-weight-bold">Game-6</p>
+	</div>
+	</div>
+	</div>
+</body>
+
+	<!-------------Footer-------------->
+	<div class="container-fluid mt-3 footer"> 
+<div class="row "> 
+
+<div class="col-lg-3 mt-4 text-white"> 
+
+<ul>
+<h6 >LOGO</h6>
+	<li><a class="navbar-brand" href="index.html">FlickGamez </a></li>
+	<li class="mt-2"><i class="fab fa-facebook-f"></i> <i class="fab fa-instagram"></i> <i class="fab fa-pinterest-square"></i> <i class="fab fa-google-plus-square"></i></li>
+
+	</ul>
+
+
+</div>
+<div class="col-lg-3 mt-4 text-white">
+
+<ul>
+<h6 >INFORMATION</h6>
+	<li>About US</li>
+	<li>Contact US</li>
+	
+	<li>Privacy Policy</li>
+	<li>Tems & Conditions</li>
+	<li>Gift Certificate</li>
+	
+</ul>
+</div>
+<div class="col-lg-3 mt-4 text-white">
+
+<ul>
+<h6 >MY ACCOUNT</h6>
+	<li>My Account</li>
+	<li>Specials</li>
+	<li>Set Map</li>
+	<li>Gift Certificate</li>
+</ul>
+</div>
+<div class="col-lg-3 mt-4 text-white">
+
+<ul class="addrs">
+<h6  >CONTACT US</h6>
+	<li><i class="fas fa-map-marker-alt"></i> Downtown mall, 4th floor</li>
+	<li><i class="fas fa-envelope"></i> abcdfg@gmail.com</li>
+	<li><i class="fas fa-phone"></i> 012-345-6789</li>
+	<li><i class="fas fa-location-arrow"></i> Hyderabad,Telangana</li>
+	
+</ul>
+</div>
+</div>
+<hr class="bg-white w-75" />
+<p class="text-center text-white pt-0 ">copy rights issued by prasanth@2020</p>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+
+
+</html>
